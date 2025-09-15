@@ -10,3 +10,17 @@ CREATE TABLE ARTISTAS (
     ATIVO BOOLEAN DEFAULT TRUE,
 
 );
+
+INSERT INTO ARTISTAS (
+    NOME, TIPO , MEMBROS, GENERO_MUSICAL, PAIS_ORIGEM, ANO_INICIO, MUSICA_MAIS_ESCUTADA, ATIVO)
+    
+VALUES (
+    'Mamonas Assassinas',
+    'Banda',
+    'Dinho, Bento Hinoto, Samuel Reoli, Sergio Reoli, Júlio Rasec',
+    'Rock Cômico, Pop Rock',
+    'Brasil',
+     1995,
+    'Pelados em Santos',
+    'N'
+);
