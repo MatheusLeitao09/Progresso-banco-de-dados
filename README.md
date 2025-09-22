@@ -49,3 +49,49 @@ Este banco de dados está em constante evolução. Abaixo estão as principais a
         ('AdminTest', 'admin@email.com', 0, '2024-03-20');
 
        ```
+
+ ```sql 
+CREATE DATABASE maquiagem;
+
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    marca VARCHAR(50) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    categoria VARCHAR(30) NOT NULL,
+    estoque INT DEFAULT 0
+);
+
+SELECT * FROM produtos;
+
+
+
+INSERT INTO produtos (nome, marca, preco, categoria, estoque) 
+VALUES
+('Água Micelar', 'Garnier', 29.90, 'Skincare', 300),
+('Protetor Solar ', 'Isdin', 98.00, 'Skincare', 180),
+('Máscara de Cílios', 'Maybelline', 65.99, 'Maquiagem', 220),
+('Shampoo a Seco', 'Batiste', 35.50, 'Cabelos', 150),
+('Lip Oil Hidratante', 'Dior', 210.00, 'Maquiagem', 60);
+
+
+
+
+INSERT INTO produtos (nome, marca, preco, categoria, estoque) VALUES
+('Esfoliante Corporal Coffee Scrub', 'Frank Body', 78.50, 'Corpo', 110),
+('Blush Líquido Soft Pinch', 'Rare Beauty', 125.00, 'Maquiagem', 160),
+('Sérum Corretor de Manchas C E Ferulic', 'Skinceuticals', 550.00, 'Skincare', 45),
+('Óleo Tratamento Capilar Moroccanoil', 'Moroccanoil', 189.90, 'Cabelos', 85),
+('Kit de Pincéis Essenciais 5 Peças', 'Sigma Beauty', 315.00, 'Acessórios', 55),
+('Máscara de Argila Detox Original', 'Glamglow', 250.00, 'Skincare', 70),
+('Perfume Black Opium Eau de Parfum', 'Yves Saint Laurent', 450.00, 'Perfumes', 40),
+('Paleta de Sombras Naked Heat', 'Urban Decay', 340.00, 'Maquiagem', 65),
+('Hidratante Facial Toleriane Sensitive', 'La Roche-Posay', 89.90, 'Skincare', 200),
+('Shampoo Rejuvenescedor sem Sulfato', 'Olaplex', 149.00, 'Cabelos', 105),
+('Esmalte de Longa Duração Gel Couture', 'Essie', 29.90, 'Unhas', 250),
+('Bronzeador Líquido Hoola', 'Benefit', 170.00, 'Maquiagem', 95),
+('Creme Hidratante para Mãos Karité', 'L''Occitane', 69.90, 'Corpo', 130),
+('Delineador Líquido Tattoo Liner', 'KVD Beauty', 110.00, 'Maquiagem', 140),
+('Tônico Clareador com Ácido Glicólico', 'The Ordinary', 95.00, 'Skincare', 115);
+
+```
