@@ -1,4 +1,4 @@
-UPDATE produtos SET preco = preco * 0.80
+UPDATE produtos SET preco = preco - preco * 0.20
 WHERE categoria = 'Skincare';
 
 SELECT * FROM produtos;
